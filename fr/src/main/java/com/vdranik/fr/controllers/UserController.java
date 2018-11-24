@@ -21,16 +21,19 @@ public class UserController {
 
   @RequestMapping("/showReg")
   public String showRegistrationPage() {
+    LOGGER.info("Inside showRegistrationPage()");
     return "login/registerUser";
   }
 
   @RequestMapping("/showLogin")
   public String showLoginPage() {
+    LOGGER.info("Inside {} showLoginPage()");
     return "login/login";
   }
 
   @RequestMapping(value = "/registerUser", method = RequestMethod.POST)
   public String showLoginPage(@ModelAttribute("user") User user) {
+    LOGGER.info("Inside {} register()" + user);
     userRepository.save(user);
     return "login/login";
   }
@@ -38,11 +41,12 @@ public class UserController {
   @RequestMapping(value = "/login", method = RequestMethod.POST)
   public String login(@RequestParam("email") final String email, @RequestParam("password") final String password, final ModelMap modelMap) {
 
-    LOGGER.error("ERROR");
-    LOGGER.warn("WARNING");
-    LOGGER.info("INFO");
-    LOGGER.debug("DEBUG");
-    LOGGER.trace("TRACE");
+    LOGGER.info("Inside login() and email is: " + email);
+//    LOGGER.error("ERROR");
+//    LOGGER.warn("WARNING");
+//    LOGGER.info("INFO");
+//    LOGGER.debug("DEBUG");
+//    LOGGER.trace("TRACE");
 
     User user = userRepository.findByEmail(email);
     if(user.getPassword().equals(password)){

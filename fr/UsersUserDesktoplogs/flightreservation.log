@@ -1,0 +1,83 @@
+2018-11-24 22:13:28 - %PARSER_ERROR[msd]
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@30ee2816 - There is no conversion class registered for conversion word [msd]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@30ee2816 - [msd] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at com.vdranik.fr.FrApplication.main(FrApplication.java:12)
+2018-11-24 22:13:51 - Starting FrApplication on vdranik with PID 6324 (C:\Users\User\Desktop\FlightBooking\fr\target\classes started by User in C:\Users\User\Desktop\FlightBooking\fr)
+2018-11-24 22:13:51 - No active profile set, falling back to default profiles: default
+2018-11-24 22:13:51 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e171cd7: startup date [Sat Nov 24 22:13:51 EET 2018]; root of context hierarchy
+2018-11-24 22:13:52 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d2bdf7ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 22:13:53 - Tomcat initialized with port(s): 8080 (http)
+2018-11-24 22:13:53 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-11-24 22:13:53 - Starting service [Tomcat]
+2018-11-24 22:13:53 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-11-24 22:13:53 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\Java\jdk1.8.0_144\bin;D:\Program Files\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;D:\Program Files\apache-tomcat-7.0.69\bin;D:\Android_SDK\tools;D:\Android_SDK\platform-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PostgreSQL\pg96\bin;D:\Program Files\AEM\crx-quickstart\opt\filevault\filevault\vault-cli-3.1.16\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Program Files\Gradle\gradle-4.6\bin;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\payara5\bin;D:\Program Files\protoc-3.6.0-win32\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Microsoft\WindowsApps;;.]
+2018-11-24 22:13:53 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-24 22:13:53 - Initializing Spring embedded WebApplicationContext
+2018-11-24 22:13:53 - Root WebApplicationContext: initialization completed in 1668 ms
+2018-11-24 22:13:53 - Servlet dispatcherServlet mapped to [/]
+2018-11-24 22:13:53 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 22:13:53 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 22:13:53 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 22:13:53 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 22:13:53 - HikariPool-1 - Starting...
+2018-11-24 22:13:53 - HikariPool-1 - Start completed.
+2018-11-24 22:13:53 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-11-24 22:13:53 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-11-24 22:13:53 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-24 22:13:53 - HHH000206: hibernate.properties not found
+2018-11-24 22:13:53 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-24 22:13:54 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-11-24 22:13:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-11-24 22:13:54 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-24 22:13:54 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 22:13:55 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e171cd7: startup date [Sat Nov 24 22:13:51 EET 2018]; root of context hierarchy
+2018-11-24 22:13:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-11-24 22:13:55 - Mapped "{[/admin/showAddFlight]}" onto public java.lang.String com.vdranik.fr.controllers.FlightController.showAddFlight()
+2018-11-24 22:13:55 - Mapped "{[/findFlights]}" onto public java.lang.String com.vdranik.fr.controllers.FlightController.findFlights(java.lang.String,java.lang.String,java.util.Date,org.springframework.ui.ModelMap)
+2018-11-24 22:13:55 - Mapped "{[/completeReservation],methods=[POST]}" onto public java.lang.String com.vdranik.fr.controllers.ReservationController.completeReservation(com.vdranik.fr.dto.ReservationRequest,org.springframework.ui.ModelMap)
+2018-11-24 22:13:55 - Mapped "{[/showCompleteReservation]}" onto public java.lang.String com.vdranik.fr.controllers.ReservationController.showCompleteReservation(java.lang.Long,org.springframework.ui.ModelMap)
+2018-11-24 22:13:55 - Mapped "{[/reservations]}" onto public com.vdranik.fr.entities.Reservation com.vdranik.fr.controllers.ReservationRestController.updateReservation(com.vdranik.fr.dto.ReservationUpdateRequest)
+2018-11-24 22:13:55 - Mapped "{[/reservations/{id}]}" onto public com.vdranik.fr.entities.Reservation com.vdranik.fr.controllers.ReservationRestController.findReservation(java.lang.Long)
+2018-11-24 22:13:55 - Mapped "{[/showReg]}" onto public java.lang.String com.vdranik.fr.controllers.UserController.showRegistrationPage()
+2018-11-24 22:13:55 - Mapped "{[/registerUser],methods=[POST]}" onto public java.lang.String com.vdranik.fr.controllers.UserController.showLoginPage(com.vdranik.fr.entities.User)
+2018-11-24 22:13:55 - Mapped "{[/showLogin]}" onto public java.lang.String com.vdranik.fr.controllers.UserController.showLoginPage()
+2018-11-24 22:13:55 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.vdranik.fr.controllers.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.ModelMap)
+2018-11-24 22:13:55 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-24 22:13:55 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-24 22:13:55 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 22:13:55 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 22:13:55 - Adding welcome page: ServletContext resource [/index.html]
+2018-11-24 22:13:55 - Registering beans for JMX exposure on startup
+2018-11-24 22:13:55 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-24 22:13:55 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-24 22:13:55 - Starting ProtocolHandler ["http-nio-8080"]
+2018-11-24 22:13:55 - Using a shared selector for servlet write/read
+2018-11-24 22:13:55 - Tomcat started on port(s): 8080 (http) with context path '/fr'
+2018-11-24 22:13:55 - Started FrApplication in 3.976 seconds (JVM running for 5.112)
+2018-11-24 22:14:23 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-24 22:14:23 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-24 22:14:23 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-11-24 22:14:25 - Inside {} showLoginPage()
+2018-11-24 22:14:36 - Inside login() and email is: Vova
